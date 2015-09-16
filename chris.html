@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+  </head>
+	<body>
+		<div id="header">
+			<div id="nav">
+				<p>NOTES OF RANVIER</p>
+				<ul>
+					<li><a href="#home">Home</a><li>
+					<li><a href="#about">About</a><li>
+					<li><a href="#members">Members</a><li>
+					<li><a href="#media">Media</a><li>
+					<li><a href="#contact">Contact</a><li>
+				<ul>
+			</div>
+		</div>
+
+		<div id="page-wrap">
+			<div id="page1">
+				<a id="home"></a>
+				<div id="content-wrap">
+
+					Home content
+				</div>
+			</div>
+
+			<div id="page2">
+				<a id="about"></a>
+				<div id="content-wrap">
+					about content
+				</div>
+			</div>
+
+			<div id="page3">
+				<a id="members"></a>
+				<div id="content-wrap">
+					members content
+				</div>
+			</div>
+
+			<div id="page4">
+				<a id="media"></a>
+				<div id="content-wrap">
+					media content
+				</div>
+			</div>
+
+			<div id="page5">
+				<a id="contact"></a>
+				<div id="content-wrap">
+					contact content
+				</div>
+			</div>
+		</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+                $(".contactLink").click(function(){
+                    if ($("#contactForm").is(":hidden")){
+                        $("#contactForm").slideDown("slow");
+                    }
+                    else{
+                        $("#contactForm").slideUp("slow");
+                    }
+                });
+            });
+            function closeForm(){
+                $("#messageSent").show("slow");
+                setTimeout('$("#messageSent").hide();$("#contactForm").slideUp("slow")', 2000);
+           }
+
+$(document).ready(function() {
+  function filterPath(string) {
+    return string
+      .replace(/^\//,'')
+      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+      .replace(/\/$/,'');
+  }
+  $('a[href*=#]').each(function() {
+    if ( filterPath(location.pathname) == filterPath(this.pathname)
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+         $(this).click(function() {
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           var d = document.createElement("div");
+        d.style.height = "101%";
+        d.style.overflow = "hidden";
+        document.body.appendChild(d);
+        window.scrollTo(0,scrollToM);
+        setTimeout(function() {
+        d.parentNode.removeChild(d);
+            }, 10);
+           return false;
+         });
+      }
+    }
+  });
+});
+
+$(document).ready(function() {
+
+})
+/*! Smooth Scroll - v1.4.5 - 2012-07-22
+* Copyright (c) 2012 Karl Swedberg; Licensed MIT, GPL */
+</script>
+
+	</body>
+</html>
+Copyright (c) 2015 Copyright Holder All Rights Reserved.
