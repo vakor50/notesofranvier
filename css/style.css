@@ -45,23 +45,24 @@ body {
 
 
 .about-desc {
-  width: 60%;
+  /*width: 60%;*/
   height: auto;
   min-height: 300px;
   padding: 5%;
-  margin: 2.5%;
+  margin: 1.5%;
   background-color: rgb(229, 229, 229);
-  float:left;
+  /*float:left;*/
 }
 
 .about-supp {
-  width: 30%;
+  /*width: 30%;*/
   height: auto;
   min-height: 300px;
   padding: 5%;
-  margin: 2.5%;
+  margin: 1.5%;
+
   background-color: rgb(229, 229, 229);
-  float:right;
+  /*float:right;*/
 }
 
 /* ---------- Members Page ---------- */
