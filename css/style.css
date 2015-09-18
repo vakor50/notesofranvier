@@ -204,3 +204,7 @@ body {
   }
 
 }
+
+.navbar-right {
+  padding-right: 10px;
+}
